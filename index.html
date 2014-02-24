@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+        
+    <title>Welcome to Versailles!</title>
+
+<!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/flexslider.css" type="text/css">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-theme.css" rel="stylesheet">
+    <link href="css/audioplayer.css" rel="stylesheet">
+    
+<!-- Javascript -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+
+
+<!-- plugins -->
+    <link href="css/reset.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/slickQuiz.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="css/master.css" media="screen" rel="stylesheet" type="text/css">        
+    
+    <script src="js/audioplayer.js"></script>
+   
+    <script>
+      $( document ).ready(function() {
+    console.log( "ready!" );
+});
+
+$(window).load(function() {
+    $('.flexslider').flexslider();
+  });
+      
+        $(function () {
+    var options = {
+        // see below
+    };
+    $('#slickQuiz').slickQuiz(options);
+
+});
+        
+        $( function() { $( 'audio' ).audioPlayer(); } );
+    </script>
+    
+
+</head>
+
+<body>
+
+<div class="container">
+    
+<div class="row">
+
+<!-- Slides-->
+<div class="col-md-12 flexslider">
+  <ul class="slides">
+    
+<!-- presentation --> 
+    <li>
+        <div id="presentationcaption">
+            <div class="presentation">
+            <h1>Welcome to Versailles!</h1>
+            <p class="presentation">Versailles Castle is the 5th most visited place in France. <br>It is also one of the symbols of French monarchy. <br>Let's visit it together! <br>(and if you'd like to have some music for the atmosphere, click on the player under the picture!) </p>
+        </div>
+        </div>
+      <img src="images/castle.jpg" />
+    </li>
+    
+<!-- maps --> 
+    <li>
+      <img src="images/plane.jpg">
+        <div class="bottom-caption">
+            <img id="mapimage" src="images/france.png">
+            <h1>Where?</h1>
+            <p>The city of Versailles is only 10 miles southwest of Paris.</p>
+            <p>It became the center of political power from 1682 to 1789, under Louis XIV's rule.</p>
+        </div>
+    </li>
+    
+<!-- timeline --> 
+    <li>
+    <div>
+    <a href="#" class="wrapper">
+       <span class="text">
+        <p class="titlekings">Louis XIII</p>
+        <p>(1601-1643)</p>
+        <p>Louis XIII, also known as "Louis the Just", decided to make of Versailles a hunting lodge in 1624. His reign is marked by his fight against the Habsburg Empire.</p>
+        </span>
+    <img class="kings" src="images/kings/louisxiii.jpg" />
+</a>
+    <a href="#" class="wrapper">
+        <span class="text">
+        <p class="titlekings">Louis XIV</p>
+        <p>(1638-1715)</p>
+        <p>Louis XIV, also called "Louis the Great" or "The Sun King" ruled France for 72 years. He created a centralized state in Versailles and an absolute monarchy.</p>
+        </span>
+    <img class="kings"src="images/kings/louisxiv_tl.jpg">
+</a>
+    <a href="#" class="wrapper">
+        <span class="text">
+            <p class="titlekings">Louis XV</p>
+            <p>(1710-1774)</p>
+            <p>Louis XV is also known as "Louis the Well Beloved". Scholars believe he actually discredited his great grand father Louis XIV's absolute monarchy</p>
+        </span>
+    <img class="kings" src="images/kings/louisxv.jpg">
+</a>
+    <a href="#" class="wrapper">
+        <span class="text">
+            <p class="titlekings">Louis XVI</p>
+            <p>(1754-1793)</p>
+            <p>Louis XVI attempted to reform France, but ultimately, the French Revolution happened and he and his wife Marie-Antoinette were executed by guillotine</p>
+        </span>
+    <img class="kings"src="images/kings/louisxvi.jpg">
+</a>
+        
+    </div>
+        <div class="bottom-caption">
+            <p>Who's who? These four kings either built or lived in Versailles. Click on their portraits to find out more about them.</p>
+    
+    </li>
+
+    
+ <!-- castle map --> 
+    <li>
+      <img src="images/mapofthecastle.png">
+      <div id="castlemap-caption">
+        <h1>Who built what?</h1>
+        <img id="castlemapimage" src="images/legendes.png">
+    </div>
+    </li>
+<!-- hall of mirrors --> 
+    <li>
+    <div>
+    <img src="images/mirrors.jpg" />
+    <div class="map-caption">
+        <h1>The Hall of Mirrors</h1>
+        <img class="floatleft"src="images/hallofmirrors.png">        
+        <p>The Hall of Mirrors was achieved by architect Jules Hardouin-Mansart in 1684. There are 17 mirror-clad arches, reflecting 17 arcaded windows from which you can see the gardens. In total no less than 357 mirrors were used in the room.</p>
+    </div>
+    </div>
+    </li>
+    
+    
+<!-- chapel --> 
+    <li>
+      <img src="images/chapel.jpg" />
+      <div class="map-caption">
+        <h1>The chapel</h1>
+        <img class="floatleft" src="images/chapelmap.png">
+        <p>The Chapel was the last major building of Louis XIV. The present chapel is actually the fifth in the history of the castle and was finished in 1710. Louis XIV attended the service every day.</p>
+    </div>
+    </li>
+
+<!-- gardens --> 
+    <li>
+      <img src="images/orangerie.jpg" />
+        <div class="left-caption">
+        <h1>The gardens</h1>
+        <img id="lenotre" src="images/lenotrebuste.png">
+        <p>In 1661, Louis XIV ordered Andr&eacute; Le N&ocirc;tre (1613-1700) plans for Versailles' gardens. The works took forty years to complete. 300 years later, more than six million visitors walk in the gardens every year. </p>
+        <p>In 2013, Versailles celebrated Le N&ocirc;tre's 400th anniversary with a new exposition.</p>
+        </div>
+    </li>
+    
+<!-- quiz --> 
+    <li id="slickQuiz">
+        <h1 class="quizName"><!-- where the quiz name goes --></h1>
+        <div class="quizArea">
+            <div class="quizHeader">
+                <!-- where the quiz main copy goes -->
+                <a class="button startQuiz" href="#">Get Started!</a>
+            </div>
+            <!-- where the quiz gets built -->
+        </div>
+        <div class="quizResults">
+            <h3 class="quizScore">You Scored: <span><!-- where the quiz score goes --></span></h3>
+            <h3 class="quizLevel"><strong>Ranking:</strong> <span><!-- where the quiz ranking level goes --></span></h3>
+            <div class="quizResultsCopy">
+                <!-- where the quiz result copy goes -->
+            </div>
+        </div>
+    </li>
+
+<!-- Visit the castle -->
+
+<li>
+<h1>Enjoy your visit!</h1>
+<p class="googlemaps">You can now visit the castle with Google Maps. See if you can find the Hall of Mirrors or the King's Appartments!</p>
+<div class="iframe-rwd">
+<iframe frameborder="0" scrolling="no" marginheight="50px" marginwidth="0" src="https://maps.google.com/maps?layer=c&amp;panoid=DlvVK_82a3do55Vkw48Tgw&amp;ie=UTF8&amp;source=embed&amp;output=svembed&amp;ll=48.804541%2C2.12013&amp;cbp=13%2C285.5191197882473%2C%2C0%2C14.125763019767177"></iframe>
+</div>
+</li>
+<!-- sources --> 
+    <li>
+      <img src="images/entrance.jpg" />
+      <div class="bottom-caption sources">
+            <h1>Sources</h1>
+<a href="http://en.chateauversailles.fr/homepage">Official website //</a>
+<a href="http://www.all-free-photos.com/fr/main-fr.php">Photo credits //</a>
+<a href="http://www.versailles3d.com/">Versailles 3D //</a>
+<a href="https://itunes.apple.com/fr/album/lully-te-deum/id140428217">Music : Jean-Baptiste Lully "Te Deum"</a>
+      </div>
+    </li>
+  </ul>
+</div>
+</div>
+
+<div>
+<audio src="music/lullytedeum.mp3" preload="auto" controls></audio>
+
+        <script src="js/slickQuiz-config.js"></script>
+        <script src="js/slickQuiz.js"></script>
+        <script src="js/master.js"></script>
+</div> 
+</div>
+</body>
+</html>
